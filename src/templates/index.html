@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ballot</title>
+</head>
+<body>
+    <h1>
+        Please Choose a Candidate
+    </h1>
+
+    <form name="ballotSelection" action="" method="post"></form>
+    <div>
+        <p>
+            <input type = "radio" value = "{{ choice }}" name = "candidates" id = "craig">
+            <label for="craig"> Craig </label><br>
+            <input type = "radio" value = "{{ choice }}" name = "candidates" id = "bill">
+            <label for="bill"> Bill </label><br>
+            <input type = "radio" value = "{{ choice }}" name = "candidates" id = "mittens">
+            <label for="mittens"> Mittens </label><br>
+        </p>
+    </div>
+
+    <div>
+        <form action = "submit" name="submit" method="post">
+            <input type = "submit" value = "Submit" name = "submitButton" id = "submit">
+        </form>
+    </div>
+
+</body>
+</html>
